@@ -1,0 +1,28 @@
+a {
+  transition: background-color .5s; }
+
+a:hover {
+  background-color: gold; }
+
+header {
+  background-color: rgba(22, 122, 4, 0.581);
+  border: radius 5px; }
+
+footer {
+  background-color: rgba(22, 122, 4, 0.581);
+  border-radius: 5px; }
+
+/*map-get color h1 h2*/
+h1 {
+  color: #82d535c7; }
+
+h2 {
+  color: #42d2cbc9; }
+
+.color, p {
+  color: #d4b012fd; }
+
+/*extend*/
+/*mixin*/
+h1 {
+  background-color: #04bd7f; }

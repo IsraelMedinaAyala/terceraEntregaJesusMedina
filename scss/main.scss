@@ -1,0 +1,36 @@
+
+@import 'global/base.scss';
+@import 'global/header.scss';
+@import 'global/footer.scss';
+
+/*map-get color h1 h2*/
+$color: (
+    primary: #82d535c7 ,
+    secondary:  #42d2cbc9,
+    tertiary: #d4b012fd
+);
+
+h1{
+    color: map-get($color,primary);
+}
+
+h2{
+    color: map-get($color, secondary);
+}
+.color{
+    color: map-get($color , tertiary );
+}
+/*extend*/
+p {
+    @extend .color;
+
+    
+}
+/*mixin*/
+@mixin DJ {
+    background-color: rgb(4, 189, 127);
+}
+
+h1{
+    @include DJ;
+}
